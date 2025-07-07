@@ -38,7 +38,7 @@ export default function Login() {
       login(response.data.token, response.data.user);
 
       localStorage.setItem("userId", response.data.user.id);
-      
+
       toast.success('Logged in successfully!');
       resetForm();
       setTimeout(() => {
@@ -56,7 +56,7 @@ export default function Login() {
   return (
     <div className="relative h-screen overflow-hidden">
       {loading && <Loader />}
-      <Link to="/">
+      <Link to="/" className="hidden md:block absolute top-4 left-4">
         <h1 className='font-bold text-5xl text-blue-800' style={{ fontFamily: 'MuseoModerno' }}>FL</h1>
       </Link>
 
@@ -66,6 +66,14 @@ export default function Login() {
         </div>
 
         <div className="flex flex-col justify-center items-center h-full p-8">
+
+          <div className="block md:hidden mb-8">
+            <Link to="/">
+              <h1 className="text-5xl font-bold text-blue-800 text-center animate-bounce bg-white rounded-full p-2" style={{ fontFamily: 'MuseoModerno' }}>
+                FL
+              </h1>
+            </Link>
+          </div>
           <div className="max-w-md w-full ">
             <Formik
               initialValues={{ email: '', password: '' }}
