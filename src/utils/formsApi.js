@@ -1,24 +1,24 @@
-import axios from 'axios';
+import axios from '../utils/axiosInstance';
 
-const API_URL = `${import.meta.env.VITE_API_BASE_URL}/api/forms`;
+
 
 export const saveForm = async (payload) => {
-  const response = await axios.post(API_URL, payload);
+  const response = await axios.post('/api/forms', payload);
   return response.data;
 };
 
 export const fetchFormsForUser = async (userId) => {
-  const response = await axios.get(`${API_URL}/user/${userId}`);
+  const response = await axios.get(`/api/forms/user/${userId}`);
   return response.data;
 };
 
 export const deleteForm = async (id) => {
-  const response = await axios.delete(`${API_URL}/${id}`);
+  const response = await axios.delete(`/api/forms/${id}`);
   return response.data;
 };
 
 export const updateForm = async (id, payload) => {
-  const response = await axios.put(`${API_URL}/${id}`, payload);
+  const response = await axios.put(`/api/forms/${id}`, payload);
   return response.data;
 };
 
