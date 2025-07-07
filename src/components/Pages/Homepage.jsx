@@ -24,7 +24,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="md:w-1/2 mb-10 md:mb-0"
           >
-            <h1 className="text-3xl md:text-4xl font-extrabold text-blue-600 mb-6">
+            <h1 className="text-4xl md:text-3xl font-extrabold text-blue-600 mb-6">
               Build Dynamic Forms Effortlessly
             </h1>
             <p className="text-lg text-gray-900 mb-8">
@@ -73,7 +73,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto px-4"
         >
-          <h2 className="text-xl md:text-4xl font-bold text-center text-blue-600 mb-12">
+          <h2 className="text-xl md:text-3xl font-bold text-center text-blue-600 mb-12">
             <Typewriter
               words={[
                 'Why FormLab?',
