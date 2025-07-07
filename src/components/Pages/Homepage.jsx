@@ -24,16 +24,16 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="md:w-1/2 mb-10 md:mb-0"
           >
-            <h1 className="text-4xl md:text-3xl font-extrabold text-blue-600 mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-blue-600 mb-6">
               Build Dynamic Forms Effortlessly
             </h1>
-            <p className="text-lg text-gray-900 mb-8">
+            <p className="text-base sm:text-lg text-gray-900 mb-8">
               FormLab lets you create highly dynamic, drag-and-drop forms. Design complex forms visually without writing complex code. Fast, elegant, and intuitive.
             </p>
             <div className="space-x-4">
               <button
                 onClick={() => navigate(user ? '/formBuilder' : '/login')}
-                className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 font-medium"
+                className="bg-blue-600 text-white px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base rounded hover:bg-blue-700 font-medium"
               >
                 Get Started
               </button>
@@ -73,7 +73,8 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto px-4"
         >
-          <h2 className="text-xl md:text-3xl font-bold text-center text-blue-600 mb-12">
+        <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-center text-blue-600 mb-12">
+
             <Typewriter
               words={[
                 'Why FormLab?',
@@ -155,10 +156,12 @@ function FeatureRow({ title, desc, img, reverse }) {
         transition={{ duration: 0.8 }}
         className="md:w-1/2 md:px-10 mt-6 md:mt-0"
       >
-        <h3 className="text-2xl md:text-3xl font-bold text-blue-600 mb-4">
+       <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 mb-4">
+
           {title}
         </h3>
-        <p className="text-gray-900 text-lg">{desc}</p>
+        <p className="text-gray-900 text-base sm:text-lg">{desc}</p>
+
       </motion.div>
     </motion.div>
   );

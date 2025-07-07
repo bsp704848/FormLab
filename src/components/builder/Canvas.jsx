@@ -341,27 +341,27 @@ export default function Canvas({
             <FieldWrapper>
               <div className="relative group">
 
-                <div className="absolute -top-2 -right-3 flex gap-1">
+                <div className="absolute -top-2 -right-3 flex gap-1 z-20 bg-white bg-opacity-90 rounded shadow-md">
                   <button
-                    onClick={() => onEdit(field.id)}
+                    onClick={(e) => { e.stopPropagation(); onEdit(field.id); }}
                     className="p-1 hover:bg-gray-200 rounded"
                   >
                     <Pencil size={16} color='blue' />
                   </button>
                   <button
-                    onClick={() => onDelete(field.id)}
+                    onClick={(e) => { e.stopPropagation(); onDelete(field.id); }}
                     className="p-1 hover:bg-gray-200 rounded"
                   >
                     <Trash2 size={16} color='red' />
                   </button>
                   <button
-                    onClick={() => onMoveUp(field.id)}
+                    onClick={(e) => { e.stopPropagation(); onMoveUp(field.id); }}
                     className="p-1 hover:bg-gray-200 rounded"
                   >
                     <ArrowUp size={16} />
                   </button>
                   <button
-                    onClick={() => onMoveDown(field.id)}
+                    onClick={(e) => { e.stopPropagation(); onMoveDown(field.id); }}
                     className="p-1 hover:bg-gray-200 rounded"
                   >
                     <ArrowDown size={16} />
