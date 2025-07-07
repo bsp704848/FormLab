@@ -32,7 +32,7 @@ export default function TextField({
 
   return (
     <div className="mb-4 w-full max-w-md mx-auto relative">
-      <label className="block mb-1 text-gray-700">{safeLabel}</label>
+      <label className="block mb-1 text-gray-900">{safeLabel}</label>
       <input
         type={inputType}
         name={name}
@@ -48,7 +48,7 @@ export default function TextField({
         <button
           type="button"
           onClick={() => setShowPassword(!showPassword)}
-          className="absolute right-3 top-[48px] transform -translate-y-1/2 text-gray-500 hover:text-gray-700"
+          className="absolute right-3 top-[48px] transform -translate-y-1/2 text-gray-500 hover:text-gray-900"
         >
           {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
         </button>

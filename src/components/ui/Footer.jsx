@@ -53,7 +53,7 @@ export default function Footer() {
               Formlab
             </h1>
           </button>
-          <div className="mt-2 text-gray-700 text-sm text-center md:text-left w-full">
+          <div className="mt-2 text-gray-900 text-sm text-center md:text-left w-full">
             1234 Innovation Drive, Suite 100,<br />
             Tech City, CA 90001, USA
           </div>

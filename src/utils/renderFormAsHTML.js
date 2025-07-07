@@ -20,7 +20,7 @@ export default function renderFormAsHTML(fields) {
         if (inputType === 'password') {
           return `
             <div class="mb-6 relative" style="${styleString}">
-              <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+              <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
               <input 
                 id="${field.id}"
                 type="password"
@@ -43,7 +43,7 @@ export default function renderFormAsHTML(fields) {
         } else {
           return `
             <div class="mb-6" style="${styleString}">
-              <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+              <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
               <input 
                 type="${inputType}"
                 placeholder="${field.props.placeholder || ''}" 
@@ -60,7 +60,7 @@ export default function renderFormAsHTML(fields) {
       case 'textarea':
         return `
           <div class="mb-6" style="${styleString}">
-            <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+            <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
             <textarea 
               placeholder="${field.props.placeholder || ''}" 
               rows="${field.props.rows || 3}" 
@@ -73,7 +73,7 @@ export default function renderFormAsHTML(fields) {
       case 'checkbox':
         return `
           <div class="mb-6" style="${styleString}">
-            <span class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</span>
+            <span class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</span>
             ${(field.props.options || []).map(opt => {
               const optionVal = typeof opt === 'object' ? opt.value : opt;
               const optionLabel = typeof opt === 'object' ? opt.label : opt;
@@ -96,7 +96,7 @@ export default function renderFormAsHTML(fields) {
       case 'radio':
         return `
           <fieldset class="mb-6" style="${styleString}">
-            <legend class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</legend>
+            <legend class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</legend>
             ${(field.props.options || []).map(opt => `
               <label class="inline-flex items-center space-x-2 mr-4">
                 <input 
@@ -115,7 +115,7 @@ export default function renderFormAsHTML(fields) {
       case 'select':
         return `
           <div class="mb-6" style="${styleString}">
-            <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+            <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
             <select 
               class="w-full border border-gray-300 rounded px-4 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none"
               style="${styleString}"
@@ -134,7 +134,7 @@ export default function renderFormAsHTML(fields) {
 
       case 'paragraph':
         return `
-          <p class="mb-6 text-gray-700 leading-relaxed" style="${styleString}">
+          <p class="mb-6 text-gray-900 leading-relaxed" style="${styleString}">
             ${field.props.text || field.props.content || ''}
           </p>
         `;
@@ -164,7 +164,7 @@ export default function renderFormAsHTML(fields) {
       case 'file':
         return `
           <div class="mb-6" style="${styleString}">
-            <label class="block font-semibold text-gray-700 mb-2">${field.props.label || 'Upload File'}</label>
+            <label class="block font-semibold text-gray-900 mb-2">${field.props.label || 'Upload File'}</label>
             <input 
               type="file" 
               name="${field.props.name || ''}"
@@ -178,13 +178,13 @@ export default function renderFormAsHTML(fields) {
       case 'date':
         return `
           <div class="mb-6" style="${styleString}">
-            <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+            <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
             <input 
               type="text"
               value="${field.props.value
                 ? new Date(field.props.value).toLocaleDateString('en-GB')
                 : ''}"
-              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none bg-gray-100 text-gray-700"
+              class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none bg-gray-100 text-gray-900"
               style="${styleString}"
               readonly
             />
@@ -199,7 +199,7 @@ export default function renderFormAsHTML(fields) {
 
         return `
           <div class="mb-6" style="${styleString}">
-            <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+            <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
             <input 
               type="${inputType}"
               name="${field.props.name || ''}"
@@ -218,7 +218,7 @@ export default function renderFormAsHTML(fields) {
       case 'autocomplete':
         return `
           <div class="mb-6" style="${styleString}">
-            <label class="block font-semibold text-gray-700 mb-2">${field.props.label || ''}</label>
+            <label class="block font-semibold text-gray-900 mb-2">${field.props.label || ''}</label>
             <input 
               list="${field.id}-list"
               name="${field.props.name || ''}"

@@ -127,7 +127,7 @@ const MyForms = () => {
       )}
       <div className="hidden md:block rounded-xl overflow-hidden border border-gray-200 shadow">
         <table className="w-full text-sm">
-          <thead className="bg-gray-50 text-gray-600 uppercase text-xs font-semibold">
+          <thead className="bg-gradient-to-r from-blue-700 to-blue-900 text-white uppercase text-xs font-semibold">
             <tr>
               <th className="py-3 px-4 text-center">Number</th>
               <th className="py-3 px-4 text-center">Form Name</th>
@@ -230,11 +230,11 @@ const MyForms = () => {
 
             </div>
             <div className="flex items-center justify-between mb-1">
-              <span className="text-gray-700 font-medium">Has JSON?</span>
+              <span className="text-gray-900 font-medium">Has JSON?</span>
               <span>{renderIcon(form.json)}</span>
             </div>
             <div className="flex items-center justify-between mb-1">
-              <span className="text-gray-700 font-medium">Has HTML?</span>
+              <span className="text-gray-900 font-medium">Has HTML?</span>
               <span>{renderIcon(form.html)}</span>
             </div>
             <div className="grid grid-cols-4 gap-1 mt-3">

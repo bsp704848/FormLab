@@ -32,7 +32,7 @@ export default function FieldEditorModal({
   const renderCommonTextFields = () => (
     <>
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-gray-700">Label</label>
+        <label className="text-sm font-medium text-gray-900">Label</label>
         <input
           type="text"
           value={field.props.label || ""}
@@ -42,7 +42,7 @@ export default function FieldEditorModal({
       </div>
 
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-gray-700">Placeholder</label>
+        <label className="text-sm font-medium text-gray-900">Placeholder</label>
         <input
           type="text"
           value={field.props.placeholder || ""}
@@ -52,7 +52,7 @@ export default function FieldEditorModal({
       </div>
 
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-gray-700">Value</label>
+        <label className="text-sm font-medium text-gray-900">Value</label>
         <input
           type={field.props?.type || "text"}
           value={field.props.value || ""}
@@ -72,7 +72,7 @@ export default function FieldEditorModal({
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
         <div className="flex flex-col gap-1 sm:col-span-2">
-          <label className="text-sm font-medium text-gray-700">
+          <label className="text-sm font-medium text-gray-900">
             Font Size
           </label>
           <input
@@ -86,7 +86,7 @@ export default function FieldEditorModal({
         <div className="sm:col-span-2 flex flex-col sm:flex-row gap-4">
 
           <div className="flex-1 flex flex-col gap-1">
-            <label className="text-sm font-medium text-gray-700">
+            <label className="text-sm font-medium text-gray-900">
               Color
             </label>
             <div className="w-full">
@@ -107,7 +107,7 @@ export default function FieldEditorModal({
           </div>
 
           <div className="flex-1 flex flex-col gap-1">
-            <label className="text-sm font-medium text-gray-700">
+            <label className="text-sm font-medium text-gray-900">
               Background Color
             </label>
             <div className="w-full">
@@ -141,7 +141,7 @@ export default function FieldEditorModal({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {renderCommonTextFields()}
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Type
                 </label>
                 <select
@@ -159,7 +159,7 @@ export default function FieldEditorModal({
               </div>
 
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Name
                 </label>
                 <input
@@ -182,7 +182,7 @@ export default function FieldEditorModal({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {renderCommonTextFields()}
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Max Length
                 </label>
                 <input
@@ -196,7 +196,7 @@ export default function FieldEditorModal({
               </div>
 
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Rows
                 </label>
                 <input
@@ -223,7 +223,7 @@ export default function FieldEditorModal({
               {renderCommonTextFields()}
 
               <div className="flex flex-col gap-1 sm:col-span-2">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Options (comma-separated)
                 </label>
                 <input
@@ -255,14 +255,14 @@ export default function FieldEditorModal({
                   }
                   className="h-4 w-4 border-gray-300 rounded"
                 />
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Required
                 </label>
               </div>
 
               {(field.type === "radio" || field.type === "checkbox") && (
                 <div className="flex flex-col gap-1 sm:col-span-2">
-                  <label className="text-sm font-medium text-gray-700">
+                  <label className="text-sm font-medium text-gray-900">
                     Checked Options (comma-separated)
                   </label>
                   <input
@@ -291,7 +291,7 @@ export default function FieldEditorModal({
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Label
                 </label>
                 <input
@@ -302,7 +302,7 @@ export default function FieldEditorModal({
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Type
                 </label>
                 <select
@@ -326,7 +326,7 @@ export default function FieldEditorModal({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {renderCommonTextFields()}
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Date Type
                 </label>
                 <select
@@ -341,7 +341,7 @@ export default function FieldEditorModal({
                 </select>
               </div>
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Name
                 </label>
                 <input
@@ -370,7 +370,7 @@ export default function FieldEditorModal({
                   }
                   className="h-4 w-4 border-gray-300 rounded"
                 />
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Allow multiple files
                 </label>
               </div>
@@ -384,7 +384,7 @@ export default function FieldEditorModal({
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Text
                 </label>
                 <input
@@ -395,7 +395,7 @@ export default function FieldEditorModal({
                 />
               </div>
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Level
                 </label>
                 <select
@@ -423,7 +423,7 @@ export default function FieldEditorModal({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {renderCommonTextFields()}
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Number Type
                 </label>
                 <select
@@ -446,7 +446,7 @@ export default function FieldEditorModal({
           <>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Content
                 </label>
                 <input
@@ -458,7 +458,7 @@ export default function FieldEditorModal({
               </div>
 
               <div className="flex flex-col gap-1">
-                <label className="text-sm font-medium text-gray-700">
+                <label className="text-sm font-medium text-gray-900">
                   Type
                 </label>
                 <select

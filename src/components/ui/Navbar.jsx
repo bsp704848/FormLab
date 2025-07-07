@@ -22,7 +22,7 @@ export default function Navbar() {
             {user ? (
               <>
                 <span className='text-gray-900 font-medium text-base'>Hello , {user.username}</span>
-                <button onClick={logout} className='bg-blue-700 text-white px-4 py-2 rounded hover:bg-gray-700 font-medium'>Logout</button>
+                <button onClick={logout} className='bg-blue-700 text-white px-4 py-2 rounded hover:bg-gray-900 font-medium'>Logout</button>
               </>
             ) : (
               <>
@@ -46,7 +46,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="text-gray-700 hover:text-gray-900 focus:outline-none"
+              className="text-gray-900 hover:text-gray-900 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"

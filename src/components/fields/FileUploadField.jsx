@@ -27,7 +27,7 @@ export default function FileUploadField({
         className="border p-2 rounded w-full text-sm sm:text-base"
       />
       {value && (
-        <div className="mt-2 text-xs text-gray-700">
+        <div className="mt-2 text-xs text-gray-900">
           {Array.isArray(value)
             ? value.map((file, idx) => (
                 <div key={idx}>{file.name}</div>

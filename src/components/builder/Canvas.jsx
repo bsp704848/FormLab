@@ -172,7 +172,7 @@ export default function Canvas({
             placeholder="Enter form name..."
             value={formName}
             onChange={(e) => setFormName(e.target.value)}
-            className="w-full max-w-md border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500 text-gray-700 text-sm"
+            className="w-full max-w-md border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring focus:border-blue-500 text-gray-900 text-sm"
           />
         </div>
       </div>
