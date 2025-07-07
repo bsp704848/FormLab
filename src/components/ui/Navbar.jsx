@@ -14,7 +14,16 @@ export default function Navbar() {
 
           <div className="flex-shrink-0 flex items-center">
             <Link to="/">
-              <h1 className="font-black text-3xl sm:text-4xl text-blue-700 tracking-tight hover:text-blue-800 transition" style={{fontFamily:'MuseoModerno'}}>Formlab</h1>
+              <h1
+                className="font-black text-3xl sm:text-4xl text-blue-700 tracking-tight hover:text-blue-800 transition"
+                style={{
+                  fontFamily: 'MuseoModerno',
+                  textShadow: `-0.0625em 0.0625em 0 black,-0.0875em 0.0875em 0 lightblue`
+                }}
+              >
+                Formlab
+              </h1>
+
             </Link>
           </div>
 

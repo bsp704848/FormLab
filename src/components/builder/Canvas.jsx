@@ -37,7 +37,7 @@ export default function Canvas({
 
   const handleClear = () => {
     setFields([]);
-    setFormName(""); 
+    setFormName("");
   };
 
   const handleSaveJSON = async () => {
@@ -65,7 +65,7 @@ export default function Canvas({
 
       const payload = {
         json: jsonString,
-         html: htmlString,
+        html: htmlString,
         userId,
         name: formName || "Untitled Form",
       };
@@ -119,7 +119,7 @@ export default function Canvas({
 
       const payload = {
         json: jsonString,
-         html: htmlString,
+        html: htmlString,
         userId,
         name: formName || "Untitled Form",
       };
@@ -183,7 +183,12 @@ export default function Canvas({
         <div className="p-4 h-[400px]">
           <div className="flex justify-center items-center h-full">
             <h2 className="text-center font-semibold text-lg sm:text-sm text-gray-900">
-              Drag a field from the left to this area.
+              <span className="hidden sm:inline">
+                Drag a field from the left to this area.
+              </span>
+              <span className="inline sm:hidden">
+                Drag a field from the bottom to this area.
+              </span>
             </h2>
           </div>
         </div>

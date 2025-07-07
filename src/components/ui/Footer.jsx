@@ -48,7 +48,10 @@ export default function Footer() {
           >
             <h1
               className="font-extrabold text-5xl text-blue-800 hover:cursor-pointer"
-              style={{ fontFamily: 'MuseoModerno' }}
+              style={{
+                fontFamily: 'MuseoModerno',
+                textShadow: `-0.0625em 0.0625em 0 black,-0.0875em 0.0875em 0 lightblue`
+              }}
             >
               Formlab
             </h1>

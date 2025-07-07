@@ -56,7 +56,11 @@ export default function Register() {
     <div className="relative h-screen overflow-hidden">
       {loading && <Loader />}
       <Link to="/"  className="hidden md:block absolute top-4 left-4">
-        <h1 className='font-bold text-5xl text-blue-800' style={{ fontFamily: 'MuseoModerno' }}>FL</h1>
+        <h1 className='font-bold text-5xl text-blue-800'
+          style={{
+                  fontFamily: 'MuseoModerno',
+                  textShadow: `-0.0625em 0.0625em 0 black,-0.0875em 0.0875em 0 lightblue`
+                }}>FL</h1>
       </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-2 h-full">
@@ -68,7 +72,11 @@ export default function Register() {
 
         <div className="block md:hidden mb-8">
     <Link to="/">
-    <h1 className="text-5xl font-bold text-blue-800 text-center animate-bounce bg-white rounded-full p-2" style={{ fontFamily: 'MuseoModerno' }}>
+              <h1 className="text-5xl font-bold text-blue-800 text-center animate-bounce bg-white rounded-full p-2"
+                style={{
+                  fontFamily: 'MuseoModerno',
+                  textShadow: `-0.0625em 0.0625em 0 black,-0.0875em 0.0875em 0 lightblue`
+                }}>
         FL
       </h1>
     </Link>
