@@ -28,7 +28,7 @@ function DraggableItem({ id, label, icon: Icon, color }) {
             ref={setNodeRef}
             {...listeners}
             {...attributes}
-            className={`flex items-center gap-1 sm:gap-2 px-2 py-2 sm:px-3 rounded-md $ hover:bg-blue-100 cursor-move transition-all min-w-[90px] sm:min-w-[120px]`}
+            className={`flex items-center gap-1 sm:gap-2 px-2 py-2 sm:px-3 rounded-md $ hover:bg-blue-100 cursor-move transition-all duration-300 ease-in-out min-w-[90px] sm:min-w-[120px]`}
         >
             <Icon className={`w-4 h-4 sm:w-5 sm:h-5 ${color} shrink-0`} />
             <span className={`text-[10px] sm:text-sm text-gray-900 font-medium truncate`}>{label}</span>
