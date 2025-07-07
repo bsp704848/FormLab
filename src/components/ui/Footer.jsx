@@ -96,7 +96,7 @@ export default function Footer() {
             href="https://facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-500 transition"
+            className="text-gray-800 hover:text-blue-700 transition"
           >
             <FaFacebook className="w-5 h-5" />
           </a>
@@ -112,7 +112,7 @@ export default function Footer() {
             href="https://twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-sky-400 transition"
+            className="text-gray-800 hover:text-sky-700 transition"
           >
             <FaTwitter className="w-5 h-5" />
           </a>
@@ -120,7 +120,7 @@ export default function Footer() {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-800 hover:text-blue-400 transition"
+            className="text-gray-800 hover:text-blue-700 transition"
           >
             <FaGithub className="w-5 h-5" />
           </a>
