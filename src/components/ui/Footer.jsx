@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
 
-    <footer className="relative bg-gradient-to-r from-blue-200 to-blue-400  text-gray-800 pt-16 pb-10 overflow-hidden">
+    <footer className="relative bg-gradient-to-r from-blue-200 to-blue-400  text-gray-800 md:pt-16 pt-32 pb-8 overflow-hidden min-h-[400px] md:min-h-0">
 
 
       <div className="absolute top-0 left-0 w-full rotate-180">
@@ -66,26 +66,26 @@ export default function Footer() {
               window.scrollTo({ top: 0, behavior: 'smooth' });
               navigate('/');
             }}
-            className="hover:underline transition block w-full text-center md:w-auto hover:cursor-pointer"
+            className="hover:underline transition inline-block text-center hover:cursor-pointer"
           >
             Home
           </button>
 
           <Link
             to="/login"
-            className="hover:underline block w-full text-center md:w-auto transition hover:cursor-pointer"
+            className="hover:underline transition inline-block text-center hover:cursor-pointer"
           >
             Login
           </Link>
           <Link
             to="/register"
-            className="hover:underline transition block w-full text-center md:w-auto hover:cursor-pointer"
+            className="hover:underline transition inline-block text-center hover:cursor-pointer"
           >
             Register
           </Link>
           <Link
             to="/formBuilder"
-            className="hover:underline transition block w-full text-center md:w-auto hover:cursor-pointer"
+            className="hover:underline transition inline-block text-center hover:cursor-pointer"
           >
             Form Builder
           </Link>
@@ -127,7 +127,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="relative z-10 pt-12 text-center text-sm font-semibold text-gray-900">
+      <div className="relative z-10 pt-6 md:pt-12 text-center text-sm font-semibold text-gray-900">
         &copy; {new Date().getFullYear()} FormLab. All rights reserved.
       </div>
     </footer>
