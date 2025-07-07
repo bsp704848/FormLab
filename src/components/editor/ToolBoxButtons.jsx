@@ -1,4 +1,4 @@
-import { FileJson, Save, CircleX, House } from 'lucide-react';
+import { FileJson, Save, CircleX, House,FilesIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function ToolboxButtons({ onClear, onSaveHTML, onSaveJSON, className = '' }) {
@@ -36,6 +36,13 @@ export default function ToolboxButtons({ onClear, onSaveHTML, onSaveJSON, classN
       >
         <FileJson className="w-4 h-4 sm:w-5 sm:h-5" />
         <span className='font-bold'>JSON</span>
+      </button>
+      <button
+        onClick={() => navigate('/myForms')}
+        className="flex items-center gap-1 px-2 py-2 sm:px-3 rounded-md text-green-600 hover:bg-green-200 text-[10px] sm:text-sm "
+      >
+        <FilesIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+        <span className='font-bold'>Forms</span>
       </button>
     </div>
   );
