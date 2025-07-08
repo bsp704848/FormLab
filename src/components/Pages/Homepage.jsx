@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
 
-      <section className="bg-gradient-to-r from-gray-100 to-gray-300 ">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -26,7 +26,7 @@ export default function Home() {
           >
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-blue-600 mb-6"
               style={{
-                textShadow: `-0.0625em 0.0625em 0 white,-0.0875em 0.0875em 0 lightblue`
+                textShadow: `-0.0625em 0.0625em 0 gray,-0.0875em 0.0875em 0 lightblue`
               }}>
               Build Dynamic Forms Effortlessly
             </h1>
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" bg-gradient-to-r from-gray-100 to-gray-300 ">
+      <section className=" ">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,7 +76,7 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="max-w-7xl mx-auto px-4"
         >
-          <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-center text-blue-600 mb-12"
+          <h2 className="text-lg sm:text-xl md:text-3xl font-bold text-center text-blue-600 mb-12 mt-16"
             style={{
                 textShadow: `-0.0625em 0.0625em 0 black,-0.0875em 0.0875em 0 lightblue`
               }}>
@@ -164,7 +164,7 @@ function FeatureRow({ title, desc, img, reverse }) {
       >
         <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 mb-4"
           style={{
-                textShadow: `-0.0625em 0.0625em 0 white,-0.0875em 0.0875em 0 lightblue`
+                textShadow: `-0.0625em 0.0625em 0 gray,-0.0875em 0.0875em 0 lightblue`
               }}>
 
           {title}

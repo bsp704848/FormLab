@@ -26,8 +26,8 @@ export default function Footer() {
         >
           <defs>
             <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#d2d7dd" />
-              <stop offset="100%" stopColor="#f2f3f5" />
+              <stop offset="0%" stopColor="#ffffff" />
+              <stop offset="100%" stopColor="#ffffff" />
             </linearGradient>
           </defs>
           <path
